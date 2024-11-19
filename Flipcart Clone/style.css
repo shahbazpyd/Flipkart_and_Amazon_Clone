@@ -1,0 +1,492 @@
+/* Import Google Font 'Roboto' for consistent typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Set the font family to Roboto */
+    background-color: #f1f3f6;
+    /* Set a light gray background color */
+}
+
+/* Define a primary color variable for reuse */
+:root {
+    --primary-color: #2874f0;
+    /* Flipkart's signature blue */
+}
+
+/* Utility class for setting container padding */
+.container {
+    padding: 0 8px;
+    /* Add horizontal padding for responsiveness */
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    /* Use the primary color for the header background */
+    height: 56px;
+    /* Set a fixed height for the header */
+}
+
+/* Navigation container styles */
+header .nav-container {
+    display: flex;
+    /* Enable flexbox layout for horizontal alignment */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    height: 100%;
+    /* Make the container occupy full header height */
+    max-width: 1248px;
+    /* Set a maximum width for the container */
+    margin: 0 auto;
+    /* Center the container horizontally on the page */
+}
+
+/* Flipkart logo styles */
+header .nav-container .logo {
+    display: flex;
+    min-width: 137px;
+    /* Ensure minimum space for the logo */
+    justify-content: flex-end;
+    /* Align logo to the right of its container*/
+    cursor: pointer;
+    /* Indicate that the logo is clickable */
+}
+
+header .nav-container .logo img {
+    width: 75px;
+    /* Set the logo image width */
+}
+
+/* Search bar styles */
+header .search {
+    height: 100%;
+    /* Occupy full header height */
+    display: flex;
+    align-items: center;
+    /* Vertically center the search bar */
+    margin-left: 12px;
+    /* Add some space to the left */
+}
+
+/* Styles for the search bar container */
+header .search .search-container {
+    width: 540px;
+    /* Set a fixed width for the search container */
+    height: 36px;
+    /* Set a fixed height */
+    background-color: white;
+    /* White background */
+    border-radius: 2px;
+    /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgb(0 0 0 / 23%);
+    /* Add a subtle box shadow for depth */
+    display: flex;
+    /* Use flexbox for layout */
+}
+
+/* Styles for the search input field */
+header .search .search-container input {
+    width: calc(100% - 32px);
+    /* Take up full width minus space for the button */
+    padding: 16px;
+    /* Add padding around the text */
+    outline: none;
+    /* Remove the default focus outline */
+    border: none;
+    /* Remove default border */
+}
+
+/* Styles for the search button */
+header .search .search-container button {
+    width: 36px;
+    /* Fixed width for the button */
+    height: 100%;
+    /* Occupy full container height */
+    padding: 0 8px;
+    /* Add some padding */
+    display: flex;
+    /* Use flexbox for icon alignment */
+    justify-content: center;
+    /* Center the icon horizontally */
+    align-items: center;
+    /* Center the icon vertically */
+    border: none;
+    /* Remove default border */
+    background-color: white;
+    /* White background */
+    border-radius: 0 2px 2px 0;
+    /* Round the right corners */
+    cursor: pointer;
+    /* Indicate that it's clickable */
+}
+
+/* Styles for the Login section */
+header .login {
+    height: 100%;
+    /* Occupy full header height */
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: center;
+    /* Vertically center content */
+    margin: 0 20px;
+    /* Add horizontal margin */
+}
+
+header .login button {
+    width: 122px;
+    /* Fixed width for the button */
+    padding: 5px 40px;
+    /* Button padding */
+    font-size: 16px;
+    /* Text size */
+    font-weight: 600;
+    /* Slightly bolder text */
+    color: var(--primary-color);
+    /* Use the primary color (blue) */
+}
+
+/* Styles for "Become a Seller" link */
+header .become-seller {
+    height: 100%;
+    /* Full header height */
+    display: flex;
+    align-items: center;
+    /* Vertical centering */
+    margin: 0 20px;
+    /* Horizontal margins */
+    color: white;
+    /* White text */
+    font-size: 16px;
+    font-weight: 500;
+    /* Medium weight text */
+    cursor: pointer;
+    /* Indicate clickability */
+}
+
+/* Styles for the "More" dropdown */
+header .more {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header .more svg {
+    /* Style the dropdown arrow */
+    margin-left: 8px;
+    /* Space between text and arrow */
+    rotate: -90deg;
+    /* Rotate the arrow downwards */
+}
+
+/* Styles for the cart icon and link */
+header .cart {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+header .cart svg {
+    /* Style the Cart icon */
+    margin-right: 8px;
+    /* Add space between icon and text */
+}
+
+/* Section 1: Category List Styles */
+.section-1 {
+    width: 100%;
+    /* Full width of the parent container */
+    height: 112px;
+    /* Fixed height for the section */
+    background-color: white;
+    /* White background */
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    /* Subtle box shadow for visual depth */
+}
+
+.section-1-container {
+    width: 1280px;
+    /* Fixed width for the container */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    height: 100%;
+    /* Inherit full height from parent (.section-1) */
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Vertically align items to the center */
+    justify-content: space-between;
+    /* Distribute items evenly with space between them */
+}
+
+.section-1-item {
+    height: 100%;
+    /* Occupy full container height */
+    display: flex;
+    /* Use flexbox for item layout */
+    align-items: center;
+    /* Center items vertically */
+    flex-direction: column;
+    /* Arrange items in a vertical column */
+    justify-content: center;
+    /* Center items vertically within the column */
+    gap: 4px;
+    /* Add a small gap between the image and text */
+    font-size: 14px;
+    /* Text size */
+    font-weight: 500;
+    /* Medium weight font */
+    cursor: pointer;
+    /* Indicate that the item is clickable */
+}
+
+.section-1-item img {
+    width: 64px;
+    /* Fixed width for the category icon */
+    height: 64px;
+    /* Fixed height */
+}
+
+/* Section 2: Large Banner Styles */
+.section-2-container {
+    margin-top: 16px;
+    /* Add some top margin for spacing */
+    height: 280px;
+    /* Fixed height for the banner container */
+    /* The commented-out code below was likely an attempt to set the background image directly, 
+       but using an <img> tag in the HTML is generally preferred for better accessibility and control. */
+    /* background-image: url('...');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+/* Styles for the image within the section-2 container */
+.section-2-container img {
+    width: 100%;
+    /* Make the image occupy the full width of its container */
+    height: 100%;
+    /* Make the image occupy the full height of its container */
+    object-fit: cover;
+    /* Ensure the image covers the entire container without distortion, maintaining aspect ratio */
+    cursor: pointer;
+    /* Indicate that the image is clickable (might be a link) */
+}
+
+/* Section 3: Styles for another banner/promotional section */
+.section-3-container {
+    margin-top: 8px;
+    /* Add top margin for spacing */
+    height: 122px;
+    /* Set a fixed height for the container */
+    /* The following lines are commented out. They likely represent a previous attempt 
+       to set a background image directly on the container. Using an <img> tag (as seen in 
+       the corresponding HTML) is generally preferred for better accessibility and control. */
+    /* background-image: url('https://rukminim1.flixcart.com/fk-p-flap/2848/246/image/d56a3ed6d200038a.jpg?q=50'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+}
+
+/* Style the image within section-3 container */
+.section-3-container img {
+    width: 100%;
+    /* Occupy full container width */
+    height: 100%;
+    /* Occupy full container height */
+    object-fit: cover;
+    /* Cover the container, maintaining aspect ratio */
+    cursor: pointer;
+    /* Indicate clickability */
+}
+
+/* Section 4: Featured Offers/Products Styles */
+.section-4-container {
+    height: 100%;
+    /* Redundant: The following height declaration overrides this. */
+    margin-top: 8px;
+    /* Top margin for spacing */
+    height: 362px;
+    /* Fixed height for the container */
+    background-color: white;
+    /* White background */
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: space-between;
+    /* Distribute space between the offer section and product list */
+}
+
+.section-4-offers {
+    width: 230px;
+    /* Fixed width for the offers section */
+    height: 100%;
+    /* Occupy full container height */
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/1e483f8045ec13a8.jpg?q=90');
+    /* Background image for the offers section */
+    background-position: bottom;
+    /* Position the background image at the bottom */
+    background-repeat: no-repeat;
+    /* Prevent background image repetition */
+}
+
+.section-4-offers-viewall {
+    margin-top: 132px;
+    /* Top margin for positioning the "View All" section */
+    width: 100%;
+    /* Full width of the parent */
+    font-size: 30px;
+    /* Larger font size for the heading */
+    display: flex;
+    flex-direction: column;
+    /* Arrange items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+}
+
+.section-4-offers-viewall button {
+    margin-top: 24px;
+    /* Top margin for spacing */
+    height: 40px;
+    /* Fixed height */
+    background-color: var(--primary-color);
+    /* Use the primary color (blue) */
+    color: white;
+    /* White text color */
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    /* Add a subtle box shadow */
+    padding: 10px 20px;
+    /* Button padding */
+    font-size: 14px;
+    border: none;
+    /* Remove default border */
+    border-radius: 2px;
+    /* Slightly rounded corners */
+    font-weight: 500;
+    /* Medium font weight */
+    cursor: pointer;
+    /* Indicate clickability */
+}
+
+.section-4-list {
+    height: 100%;
+    /* Full container height */
+    width: calc(100% - 230px);
+    /* Calculate width to fill remaining space */
+    display: flex;
+    /* Use Flexbox for item arrangement */
+    overflow-x: auto;
+    /* Enable horizontal scrolling if content overflows */
+}
+
+.section-4-item {
+    width: 232px;
+    /* Fixed width for each item */
+    height: 100%;
+    /* Full container height */
+    padding: 0px 15px;
+    /* Horizontal padding */
+    display: flex;
+    flex-direction: column;
+    /* Arrange content vertically */
+    align-items: center;
+    /* Horizontally center the content */
+    justify-content: center;
+    /* Vertically center the content */
+}
+
+.section-4-item img {
+    max-width: 200px;
+    /* Maximum image width */
+    max-height: 200px;
+    /* Maximum image height */
+    object-fit: cover;
+    /* Maintain aspect ratio while covering the area */
+    cursor: pointer;
+    /* Indicate clickability */
+}
+
+.section-4-item-head {
+    /* Product/offer title styles */
+    margin-top: 16px;
+    /* Top margin */
+    font-size: 14px;
+    font-weight: 500;
+    /* Medium font weight */
+}
+
+.section-4-item-price {
+    /* Price/discount styles */
+    margin-top: 12px;
+    /* Top margin */
+    font-size: 16px;
+    color: #388e3c;
+    /* Green color for price/discount */
+}
+
+.section-4-item-explore {
+    /* "Explore Now" link styles */
+    opacity: 0.6;
+    /* Slightly reduce opacity */
+    margin-top: 12px;
+    /* Top margin */
+    font-weight: 300;
+    /* Lighter font-weight */
+    font-size: 12px;
+}
+
+/* Section 5: Image Gallery/Banner Ads Styles */
+.section-5 {
+    margin-top: 8px;
+    /* Add top margin for spacing */
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Vertically align items to the center */
+    justify-content: space-between;
+    /* Distribute items evenly with space between them */
+}
+
+.section-5 img {
+    width: 33%;
+    /* Each image takes up approximately 33% of the container's width */
+    cursor: pointer;
+    /* Indicate that the images are clickable (might be links) */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 26px;
+    /* Add top margin for spacing */
+    background-color: white;
+    /* White background color */
+    padding: 25px;
+    /* Add padding around the footer content */
+    text-align: center;
+    /* Center the text within the footer */
+    font-size: 14px;
+    /* Set the font size */
+    color: #878787;
+    /* Set the text color to a light gray */
+}
