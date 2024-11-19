@@ -1,0 +1,524 @@
+/* Universal styles applied to all elements */
+* {
+    margin: 0;
+    /* Reset default margin to zero */
+    font-family: Arial;
+    /* Set default font to Arial */
+    border: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+/* Header Styles */
+
+/* Navbar styles */
+.navbar {
+    height: 60px;
+    /* Set height of the navigation bar */
+    background-color: #0f1111;
+    /* Set background color to dark gray */
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Vertically align items to center */
+    justify-content: space-evenly;
+    /* Distribute items evenly along the main axis */
+}
+
+/* Navigation logo container styles */
+.nav-logo {
+    padding: 0.6rem;
+    /* Add padding around the logo */
+}
+
+/* Amazon logo image styles */
+.logo {
+    background-image: url('amazon_logo.png');
+    /* Set background image to the Amazon logo */
+    background-size: cover;
+    /* Cover the entire container with the image */
+    height: 50px;
+    /* Set height of the logo */
+    width: 100px;
+    /* Set width of the logo */
+    
+}
+
+/* Border styles for hover effect */
+.border {
+    border: 1.5px solid transparent;
+    /* Set initial border to transparent */
+}
+
+.border:hover {
+    border: 1.5px solid white;
+    /* Show white border on hover */
+}
+.cursor {
+    cursor: pointer;
+    /* Enable pointer cursor on hover */
+}
+
+/* Navigation address container styles */
+.nav-address {
+    padding: 0.6rem;
+    /* Add padding around the address */
+}
+
+.add-first {
+    color: #cccccc;
+    /* Set color to light gray */
+    font-size: 0.85rem;
+    /* Set font size */
+    margin-left: 15px;
+    /* Add left margin */
+}
+
+.add-second {
+    font-size: 1rem;
+    /* Set font size */
+    margin-left: 3px;
+    /* Add left margin */
+}
+
+.add-icon {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Vertically align items to center */
+}
+
+/* Navigation search bar styles */
+.nav-search {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-evenly;
+    /* Distribute items evenly along the main axis */
+    background-color: pink;
+    /* Set background color to pink */
+    width: 620px;
+    /* Set width of the search bar */
+    height: 40px;
+    /* Set height of the search bar */
+    border-radius: 4px;
+    /* Add rounded corners */
+}
+
+.nav-search:hover {
+    border: border-box;
+    /* Use border-box sizing */
+    border: 2px solid orange;
+    /* Show orange border on hover */
+}
+
+/* Search category dropdown styles */
+.search-select {
+    background-color: #f3f3f3;
+    /* Set background color to light gray */
+    width: 50px;
+    /* Set width of the dropdown */
+    text-align: content;
+    /* Align text */
+    border-top-left-radius: 4px;
+    /* Add rounded corners to top-left */
+    border-bottom-left-radius: 4px;
+    /* Add rounded corners to bottom-left */
+    border: none;
+    /* Remove default border */
+}
+
+.search-input {
+    width: 100%;
+    /* Input takes full width available */
+    font-size: 1rem;
+    /* Sets font size */
+    border: none;
+    /* Removes default border */
+}
+
+.search-icon {
+    width: 45px;
+    /* Sets width of icon container */
+    display: flex;
+    /* Enables flexbox layout */
+    justify-content: center;
+    /* Horizontally centers icon */
+    align-items: center;
+    /* Vertically centers icon */
+    font-size: 1.2rem;
+    /* Sets icon size */
+    background-color: #febd68;
+    /* Sets background color */
+    border-top-right-radius: 4px;
+    /* Rounded top-right corner */
+    border-bottom-right-radius: 4px;
+    /* Rounded bottom-right corner */
+    color: #0f1111;
+    /* Sets icon color */
+}
+
+/* box4 - Sign-in section styles */
+.nav-signin {
+    padding: 0.6rem;
+    /* Adds padding around the sign-in section */
+}
+
+span {
+    /* Styles the "Hello, sign in" text */
+    font-size: 0.7rem;
+    /* Sets font size */
+}
+
+.nav-second {
+    /* Styles the secondary links like "Account & Lists" */
+    font-size: 0.85rem;
+    /* Sets font size */
+    font-weight: 700;
+    /* Makes the text bold */
+}
+
+/* box5 - Returns and orders section styles */
+.nav-return {
+    padding: 0.6rem;
+    /* Adds padding */
+}
+
+/* box6 - Shopping cart section styles */
+.nav-cart {
+    padding: 0.6rem;
+    /* Adds padding */
+}
+
+.nav-cart i {
+    /* Styles the shopping cart icon */
+    font-size: 30px;
+    /* Sets icon size */
+}
+
+.nav-cart {
+    /* Styles the "Cart" text */
+    font-size: 0.85rem;
+    /* Sets font size */
+    font-weight: 700;
+    /* Makes text bold */
+}
+
+
+/* pannel - Second navigation panel styles */
+.pannel {
+    height: 40px;
+    /* Sets height */
+    background-color: #222f3d;
+    /* Sets background color */
+    display: flex;
+    /* Enables flexbox layout */
+    color: white;
+    /* Sets text color */
+    align-items: center;
+    /* Vertically aligns items */
+    justify-content: space-evenly;
+    /* Distributes items evenly */
+}
+
+/* pbox1 - "All" categories section styles */
+.pannel-all {
+    padding: 0.4rem;
+    /* Adds padding */
+}
+
+/* pbox2 - Other options in navigation styles */
+.pannel-ops p {
+    display: inline;
+    /* Displays elements inline */
+    margin-left: 15px;
+    /* Adds left margin */
+    padding: 0.4rem;
+    /* Adds padding */
+}
+
+.pannel-ops {
+    width: 70%;
+    /* Sets width */
+    font-size: 0.85rem;
+    /* Sets font size */
+}
+
+/* pbox3 - Deals/promotions section styles */
+.pannel-deals {
+    font-size: 0.9rem;
+    /* Sets font size */
+    font-weight: 700;
+    /* Makes text bold */
+    padding: 0.4rem;
+    /* Adds padding */
+}
+
+
+/* hero-section - Hero section styles */
+.hero-section {
+    background-image: url("hero_image3.jpg");
+    /* Sets background image */
+    background-size: cover;
+    /* Makes image cover entire section */
+    height: 350px;
+    /* Sets height */
+    display: flex;
+    /* Enables flexbox layout */
+    justify-content: center;
+    /* Horizontally centers content */
+    align-items: flex-end;
+    /* Vertically aligns content to bottom */
+}
+
+.hero-msg {
+    background-color: white;
+    /* Sets background color */
+    color: black;
+    /* Sets text color */
+    height: 40px;
+    /* Sets height */
+    display: flex;
+    /* Enables flexbox layout */
+    align-items: center;
+    /* Vertically aligns content */
+    justify-content: center;
+    /* Horizontally centers content */
+    font-size: 0.85rem;
+    /* Sets font size */
+    width: 80%;
+    /* Sets width */
+    margin-bottom: 25px;
+    /* Adds bottom margin */
+}
+
+.hero-msg a {
+    /* Styles the link within the hero message */
+    color: #007185;
+    /* Sets link color */
+}
+
+/* shop-section - Container for product category boxes */
+.shop-section {
+    display: flex;
+    /* Enables flexbox layout */
+    flex-wrap: wrap;
+    /* Allows boxes to wrap to the next line */
+    justify-content: space-evenly;
+    /* Distributes boxes evenly */
+    background-color: #e2e7e6;
+    /* Sets background color */
+}
+
+/* .box - Styles for each individual product category box */
+.box {
+    /* border: 2px solid black; */
+    /* Optional border for debugging */
+    height: 400px;
+    /* Sets height of the box */
+    width: 23%;
+    /* Sets width of the box relative to parent */
+    background-color: white;
+    /* Sets background color */
+    padding: 20px 0px 15px;
+    /* Adds padding */
+    margin-top: 15px;
+    /* Adds top margin */
+}
+
+/* .box-content - Container for content within each box */
+.box-content {
+    margin-left: 1rem;
+    /* Adds left margin */
+    margin-right: 1rem;
+    /* Adds right margin */
+}
+
+/* .p-color - Styles for the "See more" link */
+.p-color {
+    color: #007185;
+    /* Sets link color */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+}
+
+.p-color:hover {
+    color: orangered;
+    /* Changes link color on hover */
+}
+
+/* .box-img - Styles for the image within each box */
+.box-img {
+    height: 300px;
+    /* Sets image height */
+    background-size: cover;
+    /* Ensures image covers entire container */
+    margin-top: 1rem;
+    /* Adds top margin */
+    margin-bottom: 1rem;
+    /* Adds bottom margin */
+}
+
+.box-content p {
+    /*  This rule is currently empty  */
+
+}
+
+/* footer - Styles for the footer section */
+footer {
+    margin-top: 15px;
+    /* Adds top margin */
+}
+
+/* .foot-panel1 - Top section of footer ("Back to Top") */
+.foot-panel1 {
+    background-color: #37475a;
+    /* Sets background color */
+    color: white;
+    /* Sets text color */
+    height: 50px;
+    /* Sets height */
+    display: flex;
+    /* Enables flexbox layout */
+    justify-content: center;
+    /* Horizontally centers content */
+    align-items: center;
+    /* Vertically aligns content */
+    font-size: 0.85rem;
+    /* Sets font size */
+}
+
+/* .foot-panel2 - Second section of footer (links) */
+.foot-panel2 {
+    background-color: #222f3d;
+    /* Sets background color */
+    color: white;
+    /* Sets text color */
+    height: 300px;
+    /* Sets height */
+    display: flex;
+    /* Enables flexbox layout */
+    justify-content: space-evenly;
+    /* Distributes items evenly */
+}
+
+ul {
+    /* Styles for unordered lists within footer */
+    margin-top: 20px;
+    /* Adds top margin */
+}
+
+ul a {
+    /* Styles for links within unordered lists */
+    display: block;
+    /* Makes each link a block element */
+    font-size: 0.85rem;
+    /* Sets font size */
+    margin-top: 10px;
+    /* Adds top margin */
+    color: #dddddd;
+    /* Sets link color */
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    /* Sets background color */
+    color: white;
+    /* Sets text color to white */
+    border-top: 0.5px solid white;
+    /* Adds a top border */
+    height: 70px;
+    /* Sets the height of the panel */
+    display: flex;
+    /* Enables flexbox layout */
+    justify-content: center;
+    /* Horizontally centers the content */
+    align-items: center;
+    /* Vertically centers the content */
+}
+
+.logo {
+    /* Styles for the Amazon logo in the footer */
+    background-image: url(amazon_logo.png);
+    /* Sets the logo image */
+    background-size: cover;
+    /* Makes the image cover the container */
+    height: 50px;
+    /* Sets the logo height */
+    width: 100px;
+    /* Sets the logo width */
+}
+
+.special-link {
+    /* Container for language, currency, and region links */
+    margin-left: 100px;
+    /* Adds left margin */
+}
+
+.special-link a {
+    /* Styles for the links within .special-link */
+    height: 33px;
+    /* Sets height */
+    width: 177px;
+    /* Sets width */
+    /* background-color: #004B91; */
+    /* Commented-out background color */
+    color: white;
+    /* Sets text color to white */
+    border: 1px solid #848688;
+    /* Adds a border */
+    border-radius: 3px;
+    /* Adds rounded corners */
+    padding: 6px 18px 6px 8px;
+    /* Adds padding */
+    font-size: 13px;
+    /* Sets font size */
+    margin-right: 4px;
+    /* Adds right margin */
+}
+
+.flag-us {
+    /* Styles the US flag icon */
+    height: 10px;
+    /* Sets height */
+    width: 15px;
+    /* Sets width */
+}
+
+.foot-panel4 {
+    /* Styles the bottom-most section of the footer */
+    background-color: #0f1111;
+    /* Sets background color */
+    color: white;
+    /* Sets text color */
+    height: 80px;
+    /* Sets height */
+    display: flex;
+    /* Enables flexbox layout */
+    flex-direction: column;
+    /* Arranges items vertically */
+    justify-content: center;
+    /* Vertically centers content */
+    align-items: center;
+    /* Horizontally centers content */
+}
+
+.pages {
+    /* Container for legal/policy links */
+    font-size: 0.7rem;
+    /* Sets font size */
+}
+
+.pages a {
+    /* Styles the legal/policy links */
+    margin-right: 10px;
+    /* Adds right margin */
+}
+
+.copyright {
+    /* Styles the copyright text */
+    padding: 5px;
+    /* Adds padding */
+    font-size: 0.7rem;
+    /* Sets font size */
+}
